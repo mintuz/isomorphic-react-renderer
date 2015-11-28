@@ -1,5 +1,17 @@
 # Isomorphic React
 
+## Why
+You may want to do use this if you are rendering a React template server side with some fallback content / content for SEO then on the client want to update this React template with some new data that is post loaded.
+
+If you don't pass the React properties to the client, your entire React component will re-render which isn't very performant. By using this the React template will do a partial re-render.
+
+This problem is common and you can read about it on the internet. This is my solution. If it's not suitable here are some alternatives and articles which discuss this problem at length. 
+
+* https://github.com/DavidWells/isomorphic-react-example
+* https://github.com/RickWong/react-isomorphic-starterkit
+* https://bensmithett.github.io/going-isomorphic-with-react/#/
+* https://strongloop.com/strongblog/node-js-react-isomorphic-javascript-why-it-matters/
+
 ## Install
 
 `npm install isomorphic-react`
